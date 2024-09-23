@@ -1,0 +1,24 @@
+{
+    "environment": {
+        "name": "Local",
+        "production": false
+    },
+    "appInsights": {
+        "instrumentationKey": ""
+    },
+    "logging": {
+        "console": true,
+        "appInsights": false
+    },
+    "api": {
+        "url": "https://pankajapi.azurewebsites.net"
+    },
+    "app": {
+        "title": "PatientProject"
+    },
+    "buildInfo": {
+        "number": "1.0.0.0",
+        "createdOn": "Monday, September 23, 2024 6:53:43 AM"
+    },
+    "environments": []
+}

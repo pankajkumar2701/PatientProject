@@ -1,0 +1,101 @@
+- dataType: section
+  label: Personal detail
+  showTitle: true
+  column: 12
+  fields:
+    - fieldName: Title
+      label: Title
+      dataType: guid
+      entityName: Title
+      column: 2
+    - fieldName: FirstName
+      label: First name
+      dataType: string
+      required: true
+      column: 4
+    - fieldName: LastName
+      label: Last name
+      dataType: string
+      column: 6
+    - fieldName: Gender
+      label: Gender
+      dataType: guid
+      required: true
+      entityName: Gender
+      column: 2
+    - fieldName: Dob
+      label: Dob
+      dataType: datetime
+      required: true
+      column: 4
+    - fieldName: BloodGroup
+      label: Blood group
+      dataType: string
+      column: 5
+- dataType: section
+  label: Address
+  showTitle: true
+  column: 12
+  fields:
+    - fieldName: PatientAddressId_Address.AddressLine1
+      label: Address line 1 (Patient address id)
+      dataType: string
+      column: 4
+    - fieldName: PatientAddressId_Address.AddressLine2
+      label: Address line 2 (Patient address id)
+      dataType: string
+      column: 4
+    - fieldName: PatientAddressId_Address.CareOf
+      label: Care of (Patient address id)
+      dataType: string
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textbox
+    - fieldName: PatientAddressId_Address.PostalCode
+      label: Postal code (Patient address id)
+      dataType: string
+      column: 4
+    - fieldName: PatientAddressId_Address.StateId
+      label: State id (Patient address id)
+      dataType: guid
+      entityName: State
+      column: 4
+    - fieldName: PatientAddressId_Address.CountryId
+      label: Country id (Patient address id)
+      dataType: guid
+      entityName: Country
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
+    - fieldName: PatientAddressId_Address.CityId
+      label: City id (Patient address id)
+      dataType: guid
+      entityName: City
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
