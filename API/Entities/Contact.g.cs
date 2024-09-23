@@ -42,18 +42,6 @@ namespace PatientProject.Entities
         /// </summary>
         [Required]
         public Guid? TenantId { get; set; }
-
-        /// <summary>
-        /// Required field ContactRole of the Contact 
-        /// </summary>
-        [Required]
-        public byte ContactRole { get; set; }
-
-        /// <summary>
-        /// Required field ContactType of the Contact 
-        /// </summary>
-        [Required]
-        public byte ContactType { get; set; }
         /// <summary>
         /// Foreign key referencing the Title to which the Contact belongs 
         /// </summary>
@@ -90,10 +78,6 @@ namespace PatientProject.Entities
         /// BusinessRegistrationNumber of the Contact 
         /// </summary>
         public string? BusinessRegistrationNumber { get; set; }
-        /// <summary>
-        /// LabType of the Contact 
-        /// </summary>
-        public byte? LabType { get; set; }
         /// <summary>
         /// JobTitle of the Contact 
         /// </summary>

@@ -73,10 +73,6 @@ namespace PatientProject.Entities
         [Required]
         public bool Enable { get; set; }
         /// <summary>
-        /// LocationRole of the Location 
-        /// </summary>
-        public byte? LocationRole { get; set; }
-        /// <summary>
         /// ClinicTypeId of the Location 
         /// </summary>
         public Guid? ClinicTypeId { get; set; }
