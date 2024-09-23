@@ -28,7 +28,7 @@ namespace PatientProject.Entities
         /// Required field SerialNumber of the Membership 
         /// </summary>
         [Required]
-        public short SerialNumber { get; set; }
+        public int SerialNumber { get; set; }
 
         /// <summary>
         /// Required field Name of the Membership 

@@ -145,7 +145,7 @@ namespace PatientProject.Entities
         /// <summary>
         /// CountryCode of the Location 
         /// </summary>
-        public short? CountryCode { get; set; }
+        public int? CountryCode { get; set; }
         /// <summary>
         /// MobileNumber of the Location 
         /// </summary>

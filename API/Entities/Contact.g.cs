@@ -85,7 +85,7 @@ namespace PatientProject.Entities
         /// <summary>
         /// RepeatVisitSpan of the Contact 
         /// </summary>
-        public short? RepeatVisitSpan { get; set; }
+        public int? RepeatVisitSpan { get; set; }
         /// <summary>
         /// BusinessRegistrationNumber of the Contact 
         /// </summary>
@@ -101,7 +101,7 @@ namespace PatientProject.Entities
         /// <summary>
         /// CountryCode of the Contact 
         /// </summary>
-        public short? CountryCode { get; set; }
+        public int? CountryCode { get; set; }
         /// <summary>
         /// Mobile of the Contact 
         /// </summary>

@@ -144,11 +144,11 @@ namespace PatientProject.Entities
         /// <summary>
         /// MobileNumberCountryCode of the Patient 
         /// </summary>
-        public short? MobileNumberCountryCode { get; set; }
+        public int? MobileNumberCountryCode { get; set; }
         /// <summary>
         /// AlternateNumberCountryCode of the Patient 
         /// </summary>
-        public short? AlternateNumberCountryCode { get; set; }
+        public int? AlternateNumberCountryCode { get; set; }
         /// <summary>
         /// Foreign key referencing the Location to which the Patient belongs 
         /// </summary>

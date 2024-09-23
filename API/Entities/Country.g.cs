@@ -71,15 +71,15 @@ namespace PatientProject.Entities
         /// <summary>
         /// DecimalPrecision of the Country 
         /// </summary>
-        public short? DecimalPrecision { get; set; }
+        public int? DecimalPrecision { get; set; }
         /// <summary>
         /// LongDateFormat of the Country 
         /// </summary>
         public Guid? LongDateFormat { get; set; }
         /// <summary>
-        /// ShortDateFormat of the Country 
+        /// numericDateFormat of the Country 
         /// </summary>
-        public Guid? ShortDateFormat { get; set; }
+        public Guid? numericDateFormat { get; set; }
         /// <summary>
         /// Status of the Country 
         /// </summary>
@@ -87,11 +87,11 @@ namespace PatientProject.Entities
         /// <summary>
         /// CalculationPrecision of the Country 
         /// </summary>
-        public short? CalculationPrecision { get; set; }
+        public int? CalculationPrecision { get; set; }
         /// <summary>
         /// DisplayPrecision of the Country 
         /// </summary>
-        public short? DisplayPrecision { get; set; }
+        public int? DisplayPrecision { get; set; }
         /// <summary>
         /// ThousandSeparator of the Country 
         /// </summary>
