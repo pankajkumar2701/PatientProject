@@ -12,14 +12,6 @@ namespace PatientProject.Entities
     public class City
     {
         /// <summary>
-        /// Initializes a new instance of the City class.
-        /// </summary>
-        public City()
-        {
-            Flagged = false;
-        }
-
-        /// <summary>
         /// Required field TenantId of the City 
         /// </summary>
         [Required]
@@ -43,12 +35,6 @@ namespace PatientProject.Entities
         /// </summary>
         [Required]
         public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
-        /// Required field Flagged of the City 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
 
         /// <summary>
         /// Required field CreatedBy of the City 

@@ -12,14 +12,6 @@ namespace PatientProject.Entities
     public class Country
     {
         /// <summary>
-        /// Initializes a new instance of the Country class.
-        /// </summary>
-        public Country()
-        {
-            Flagged = false;
-        }
-
-        /// <summary>
         /// Required field TenantId of the Country 
         /// </summary>
         [Required]
@@ -43,12 +35,6 @@ namespace PatientProject.Entities
         /// </summary>
         [Required]
         public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
-        /// Required field Flagged of the Country 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
 
         /// <summary>
         /// Required field CreatedBy of the Country 
@@ -82,10 +68,6 @@ namespace PatientProject.Entities
         /// </summary>
         [Column(TypeName = "datetime")]
         public DateTime? UpdatedOn { get; set; }
-        /// <summary>
-        /// IsDefault of the Country 
-        /// </summary>
-        public bool? IsDefault { get; set; }
         /// <summary>
         /// DecimalPrecision of the Country 
         /// </summary>

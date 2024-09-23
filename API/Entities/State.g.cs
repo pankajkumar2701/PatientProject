@@ -12,14 +12,6 @@ namespace PatientProject.Entities
     public class State
     {
         /// <summary>
-        /// Initializes a new instance of the State class.
-        /// </summary>
-        public State()
-        {
-            Flagged = false;
-        }
-
-        /// <summary>
         /// Required field TenantId of the State 
         /// </summary>
         [Required]
@@ -62,12 +54,6 @@ namespace PatientProject.Entities
         /// </summary>
         [Required]
         public bool IsStandard { get; set; }
-
-        /// <summary>
-        /// Required field Flagged of the State 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
         /// <summary>
         /// Foreign key referencing the Country to which the State belongs 
         /// </summary>

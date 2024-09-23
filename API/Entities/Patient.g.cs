@@ -12,17 +12,6 @@ namespace PatientProject.Entities
     public class Patient
     {
         /// <summary>
-        /// Initializes a new instance of the Patient class.
-        /// </summary>
-        public Patient()
-        {
-            Flagged = false;
-            IsStandard = false;
-            IsDeceased = false;
-            IsDisabled = false;
-        }
-
-        /// <summary>
         /// Foreign key referencing the Gender to which the Patient belongs 
         /// </summary>
         [Required]
@@ -73,12 +62,6 @@ namespace PatientProject.Entities
         public string EntitySubTypeCode { get; set; }
 
         /// <summary>
-        /// Required field Flagged of the Patient 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the Patient 
         /// </summary>
         [Required]
@@ -90,12 +73,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the Patient 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// ParentId of the Patient 
         /// </summary>
@@ -135,10 +112,6 @@ namespace PatientProject.Entities
         /// </summary>
         public string? ReasonOfDeath { get; set; }
         /// <summary>
-        /// IsDeceased of the Patient 
-        /// </summary>
-        public bool? IsDeceased { get; set; }
-        /// <summary>
         /// Mobile of the Patient 
         /// </summary>
         public string? Mobile { get; set; }
@@ -158,10 +131,6 @@ namespace PatientProject.Entities
         /// AlternateMobile of the Patient 
         /// </summary>
         public string? AlternateMobile { get; set; }
-        /// <summary>
-        /// IsDisabled of the Patient 
-        /// </summary>
-        public bool? IsDisabled { get; set; }
         /// <summary>
         /// Foreign key referencing the Contact to which the Patient belongs 
         /// </summary>

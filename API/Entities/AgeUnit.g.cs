@@ -12,14 +12,6 @@ namespace PatientProject.Entities
     public class AgeUnit
     {
         /// <summary>
-        /// Initializes a new instance of the AgeUnit class.
-        /// </summary>
-        public AgeUnit()
-        {
-            IsStandard = false;
-        }
-
-        /// <summary>
         /// Required field TenantId of the AgeUnit 
         /// </summary>
         [Required]
@@ -62,12 +54,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the AgeUnit 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// ParentId of the AgeUnit 
         /// </summary>

@@ -12,15 +12,6 @@ namespace PatientProject.Entities
     public class Gender
     {
         /// <summary>
-        /// Initializes a new instance of the Gender class.
-        /// </summary>
-        public Gender()
-        {
-            Flagged = false;
-            IsStandard = false;
-        }
-
-        /// <summary>
         /// Required field TenantId of the Gender 
         /// </summary>
         [Required]
@@ -46,12 +37,6 @@ namespace PatientProject.Entities
         public string EntitySubTypeCode { get; set; }
 
         /// <summary>
-        /// Required field Flagged of the Gender 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the Gender 
         /// </summary>
         [Required]
@@ -63,12 +48,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the Gender 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// ParentId of the Gender 
         /// </summary>
