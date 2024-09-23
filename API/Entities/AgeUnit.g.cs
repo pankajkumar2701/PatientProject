@@ -25,24 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field Flagged of the AgeUnit 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
-
-        /// <summary>
-        /// Required field EntityCode of the AgeUnit 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the AgeUnit 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the AgeUnit 
         /// </summary>
         [Required]

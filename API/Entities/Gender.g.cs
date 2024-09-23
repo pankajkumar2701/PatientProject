@@ -25,18 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field EntityCode of the Gender 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the Gender 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the Gender 
         /// </summary>
         [Required]

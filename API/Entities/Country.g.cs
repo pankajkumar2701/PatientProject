@@ -25,18 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field EntityCode of the Country 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the Country 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the Country 
         /// </summary>
         [Required]
@@ -48,12 +36,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the Country 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// ParentId of the Country 
         /// </summary>

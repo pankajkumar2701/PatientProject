@@ -25,24 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field Flagged of the Title 
-        /// </summary>
-        [Required]
-        public bool Flagged { get; set; }
-
-        /// <summary>
-        /// Required field EntityCode of the Title 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the Title 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the Title 
         /// </summary>
         [Required]
@@ -54,12 +36,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the Title 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// ParentId of the Title 
         /// </summary>

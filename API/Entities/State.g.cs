@@ -25,18 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field EntityCode of the State 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the State 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the State 
         /// </summary>
         [Required]
@@ -48,12 +36,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the State 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
         /// <summary>
         /// Foreign key referencing the Country to which the State belongs 
         /// </summary>
@@ -64,14 +46,6 @@ namespace PatientProject.Entities
         /// </summary>
         [ForeignKey("CountryId")]
         public Country? CountryId_Country { get; set; }
-        /// <summary>
-        /// Active of the State 
-        /// </summary>
-        public Guid? Active { get; set; }
-        /// <summary>
-        /// ParentId of the State 
-        /// </summary>
-        public Guid? ParentId { get; set; }
         /// <summary>
         /// Code of the State 
         /// </summary>

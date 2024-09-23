@@ -25,18 +25,6 @@ namespace PatientProject.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Required field EntityCode of the City 
-        /// </summary>
-        [Required]
-        public string EntityCode { get; set; }
-
-        /// <summary>
-        /// Required field EntitySubTypeCode of the City 
-        /// </summary>
-        [Required]
-        public string EntitySubTypeCode { get; set; }
-
-        /// <summary>
         /// Required field CreatedBy of the City 
         /// </summary>
         [Required]
@@ -48,16 +36,6 @@ namespace PatientProject.Entities
         [Required]
         [Column(TypeName = "datetime")]
         public DateTime? CreatedOn { get; set; }
-
-        /// <summary>
-        /// Required field IsStandard of the City 
-        /// </summary>
-        [Required]
-        public bool IsStandard { get; set; }
-        /// <summary>
-        /// ParentId of the City 
-        /// </summary>
-        public Guid? ParentId { get; set; }
         /// <summary>
         /// UpdatedBy of the City 
         /// </summary>
@@ -100,9 +78,5 @@ namespace PatientProject.Entities
         /// MunicipalityId of the City 
         /// </summary>
         public Guid? MunicipalityId { get; set; }
-        /// <summary>
-        /// Active of the City 
-        /// </summary>
-        public Guid? Active { get; set; }
     }
 }
